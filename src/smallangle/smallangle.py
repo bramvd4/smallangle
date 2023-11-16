@@ -7,12 +7,14 @@ import pandas as pd
 from numpy import pi
 
 
+# defining a command group
 @click.group()
 def smallangle():
     """Defines a smallangle group: passes onto sine and tangent functions"""
     pass
 
 
+# defining a command for taking the sine
 @smallangle.command("sin")
 @click.option(
     "-n",
@@ -33,6 +35,7 @@ def sin(number):
     return
 
 
+# defining a command for taking the tangent
 @smallangle.command("tan")
 @click.option(
     "-n",

@@ -9,6 +9,7 @@ from numpy import pi
 
 @click.group()
 def smallangle():
+    """Defines a smallangle group: passes onto sine and tangent functions"""
     pass
 
 

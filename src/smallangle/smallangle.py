@@ -1,3 +1,6 @@
+# Small angle assignment
+# Bram van Dijk
+
 import click
 import numpy as np
 import pandas as pd
@@ -18,6 +21,11 @@ def smallangle():
     show_default=True,
 )
 def sin(number):
+    """Takes the sine for a given amount of numbers between 0 and 2 pi
+
+    Args:
+        number (integer): a number of values
+    """
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "sin (x)": np.sin(x)})
     print(df)
@@ -33,6 +41,11 @@ def sin(number):
     show_default=True,
 )
 def tan(number):
+    """Takes the tangent for a given amount of numbers between 0 and 2 pi
+
+    Args:
+        number (integer): a number of values
+    """
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "tan (x)": np.tan(x)})
     print(df)

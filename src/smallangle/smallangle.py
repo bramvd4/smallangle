@@ -27,7 +27,7 @@ def sin(number):
     """Takes the sine for a given amount of numbers between 0 and 2 pi
 
     Args:
-        number (integer): a number of values
+        number (integer): the amount of numbers between 0 and 2 pi, splitting the 0-2pi range in equal parts
     """
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "sin (x)": np.sin(x)})
@@ -48,7 +48,7 @@ def tan(number):
     """Takes the tangent for a given amount of numbers between 0 and 2 pi
 
     Args:
-        number (integer): a number of values
+        number (integer): the amount of numbers between 0 and 2 pi, splitting the 0-2pi range in equal parts
     """
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "tan (x)": np.tan(x)})
